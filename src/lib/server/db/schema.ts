@@ -1,4 +1,4 @@
-import { pgTable, pgSchema, text, uuid, timestamp } from 'drizzle-orm/pg-core';
+import { pgTable, pgSchema, text, uuid, timestamp, serial } from 'drizzle-orm/pg-core';
 
 const authSchema = pgSchema('auth');
 
@@ -19,7 +19,9 @@ export const usersTable = pgTable('users', {
 export const memoriesTable = pgTable('memories', {
   id: uuid('id').primaryKey().defaultRandom(),
   userId: uuid('userId').references(() => usersTable.id),
+  number: serial('number').notNull(),
   slug: text('slug').notNull().unique(),
+  title: text('title').notNull(),
   caption: text('caption'),
   imageUrl: text('imageUrl').notNull(),
   imageAltText: text('imageAltText').notNull(),

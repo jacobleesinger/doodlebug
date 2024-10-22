@@ -10,6 +10,7 @@ import { env } from '$env/dynamic/private';
 import { db } from '$lib/server/db';
 
 const memorySchema = z.object({
+  title: z.string(),
   slug: z.string(),
   caption: z.optional(z.string()),
   image: z.instanceof(File, { message: 'image is required'}),
@@ -98,6 +99,7 @@ export const actions = {
       const newMemoryOptions = {
         id: randomUUID(),
         userId: user.id,
+        title: form.data.title,
         slug: form.data.slug,
         caption: form.data.caption,
         imageUrl,

@@ -14,6 +14,9 @@
 <main>
   <SuperDebug data={$form} />
   <form class="flex flex-col justify-start items-start" method="POST" enctype="multipart/form-data">
+    <label for="title ">Title</label>
+    <input type="text" name="title" bind:value={$form.title} required class="input input-bordered"/>
+
     <label for="slug ">Slug</label>
     <input type="text" name="slug" bind:value={$form.slug} required class="input input-bordered"/>
 
