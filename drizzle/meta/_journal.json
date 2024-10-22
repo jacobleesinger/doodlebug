@@ -8,6 +8,20 @@
       "when": 1729191670606,
       "tag": "0000_crazy_skaar",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1729562231857,
+      "tag": "0001_square_maggott",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1729562546608,
+      "tag": "0002_goofy_leopardon",
+      "breakpoints": true
     }
   ]
 }
