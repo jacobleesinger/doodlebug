@@ -35,8 +35,8 @@
     selectMemory(memories.length);
   }
 
-  let isFirst = $derived(memory.number === 1);
-  let isLast = $derived(memory.number === memories.length);
+  let isFirst = $derived(memory?.number === 1);
+  let isLast = $derived(memory?.number === memories.length);
 
 </script>
 
