@@ -53,7 +53,7 @@
           {/if}
         </section>
 
-        <h2 class="text-2xl flex-1 flex justify-center">{memory.title}</h2>
+        <h2 class="text-2xl flex-2 flex justify-center text-center">{memory.title}</h2>
 
         <section class="flex-1 flex justify-end space-x-2">
           {#if !isLast}
