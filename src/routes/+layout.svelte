@@ -11,9 +11,10 @@
     if (error) {
       console.error(error);
     } else {
-      goto('/auth')
+      goto('/auth', { invalidateAll: true })
     }
   };
+
 </script>
 
 <header>
