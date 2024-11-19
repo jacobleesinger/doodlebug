@@ -40,9 +40,7 @@
 
 </script>
 
-<main class="flex flex-col justify-center items-center container py-8">
-  <header><h1 class="text-8xl">Doodlebug</h1></header>
-
+<main class="flex flex-col justify-center items-center container">
   {#if memory}
     <section class="flex flex-col justify-center items-center my-8 p-8 w-full">
       <section class="border-b-2 border-gray-300 pb-4 w-1/2 flex justify-space-around gray-500 space-x-2">
@@ -70,14 +68,6 @@
 </main>
 
 <style>
-  h1 {
-    font-family: 'Gamja Flower', cursive;
-  }
-
-  h2 {
-    font-family: 'Oxygen', sans-serif;
-  }
-
   p {
     font-family: 'Shadows Into Light', cursive;
   }
